@@ -1,8 +1,34 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --propo-header: calc(150px / 862);
+  --propo-aside: calc(105px / 862);
+  --propo-main: calc(1px - var(--propo-header) - var(--propo-aside));
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, Oxygen-Sans, Ubuntu, Cantarell,
                "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.contenidor-principal {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  flex: var(--propo-header);
+}
+aside {
+  flex: var(--propo-aside);
+}
+main {
+  flex: var(--propo-main);
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+header, aside, main {
+  padding-left: 25px;
+  padding-right: 25px;
 }
