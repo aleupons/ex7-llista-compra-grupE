@@ -1,8 +1,49 @@
+:root {
+  --color-cabecera: #5e81d1;
+  --color-barra-informativa: #f87500;
+  --color-principal: #ff8d27;
+  --color-texto: #333;
+  --altura-cabecera-pie: 150px;
+  --altura-barra-informativa:100px;
+  --altura-compras:600px;
+}
 * {
   box-sizing: border-box;
 }
+
 body {
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, Oxygen-Sans, Ubuntu, Cantarell,
                "Helvetica Neue", sans-serif;
 }
+
+.cabecera
+{
+  background-color: var(--color-cabecera);
+  height: var(--altura-cabecera-pie);
+}
+.barra_informativa
+{
+  background-color: var(--color-barra-informativa);
+  height: var(--altura-barra-informativa);
+}
+.compras{
+
+  background-color:var(--color-principal);
+  height: var(--altura-compras);
+
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,li
+{
+  padding: 0;
+  margin: 0;
+  list-style: none;
