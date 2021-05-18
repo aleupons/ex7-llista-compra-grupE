@@ -30,8 +30,8 @@ body {
 }
 .principal {
   flex: var(--altura-principal);
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 .cabecera, .sidebar, .principal {
   padding-left: 25px;
@@ -59,4 +59,38 @@ ul, li
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+.invisible i {
+  visibility: visible;
+}
+.tachado {
+  text-decoration: line-through;
+}
+.compras .lista {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #cccccc;
+}
+.compras .lista ul li {
+  margin-bottom: 15px;
+}
+.compras .precio_total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.compras .precio_total h3 {
+  font-weight: normal;
+}
+.grey {
+  color: #212529;
+}
+.big {
+  font-size: 45px;
 }
