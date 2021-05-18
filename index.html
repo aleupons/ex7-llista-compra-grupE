@@ -7,6 +7,9 @@
   <title>Lista de la compra</title>
   <meta name="description" content="Aplicación para gestionar la lista de la compra">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
 </head>
 
@@ -26,36 +29,51 @@
 
     <aside class="sidebar">
       <div class="barra_informativa">
-        <a href="articulo.html"><img src="img/" alt="Icono de añadir artículo"></a>
+        <a href="articulo.html">
+          <i class="fas fa-minus-circle grey big"></i>
+        </a>
         <h2>2/3 compradas</h2>
       </div>
     </aside>
 
     <main class="principal">
       <section class="compras">
-        <ul>
-          <li>
-            <label for="pan">Pan
-              <input type="checkbox" name="pan" id="pan">
-            </label>
-          </li>
-          <li>
-            <label for="azucar">Azucar
-              <input type="checkbox" name="azucar" id="azucar">
-            </label>
-          </li>
-          <li>
-            <label for="leche">Leche
-              <input type="checkbox" name="leche" id="leche">
-            </label>
-          </li>
-        </ul>
-        <ul>
-          <li>0.75€</li>
-          <li></li>
-          <li>1.20€</li>
-        </ul>
-        <h3>1.95€</h3>
+        <div class="lista">
+          <ul>
+            <li>
+              <label for="pan">
+                <input type="checkbox" name="pan" id="pan">
+                <span class="tachado">Pan</span>
+              </label>
+            </li>
+            <li>
+              <label for="azucar">
+                <input type="checkbox" name="azucar" id="azucar">
+                Azúcar
+              </label>
+            </li>
+            <li>
+              <label for="leche">
+                <input type="checkbox" name="leche" id="leche">
+                <span class="tachado">Leche</span>
+              </label>
+            </li>
+          </ul>
+          <ul>
+            <li>0.75€
+              <i class="fa fa-remove grey"></i>
+            </li>
+            <li class="invisible">Precio
+              <i class="fa fa-remove grey"></i>
+            </li>
+            <li>1.20€
+              <i class="fa fa-remove grey"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="precio_total">
+          <h3>1.95€</h3>
+        </div>
       </section>
     </main>
   </div>
