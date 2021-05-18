@@ -1,3 +1,15 @@
 * {
   box-sizing: border-box;
 }
+
+.cabecera
+{
+  background-color: #5e81d1;
+}
+.barra_informativa
+{
+  background-color: #f87500;
+}
+.compras{
+  background-color: #ff8d27;
+}
