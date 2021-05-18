@@ -37,13 +37,22 @@
 
     <main class="principal">
       <section class="articulo">
-        <h3>Editar articulo</h3>
+        <h3>Editar artículo</h3>
         <form action="">
-          <label for="nombre">Nombre:</label>
-          <input type="text" name="nombre" id="nombre" required>
-          <label for="precio">Precio:</label>
-          <input type="number" name="precio" id="precio">€
-          <input type="submit" value="Modificar">
+          <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+          </div>
+          <div class="campo">
+            <label for="precio">Precio:</label>
+            <div class="precio">
+              <input type="number" name="precio" id="precio">
+              <span class="unidades">€</span>
+            </div>
+          </div>
+          <div class="boton">
+            <input type="submit" value="Modificar">
+          </div>
         </form>
       </section>
     </main>
