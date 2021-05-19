@@ -26,8 +26,15 @@ body {
   min-height: 100vh;
 }
 .cabecera {
+  background-color: var(--color-cabecera);
+  height: var(--altura-cabecera);
+  padding: 20px 10px;
   flex: var(--altura-cabecera);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .sidebar {
   flex: var(--altura-sidebar);
 }
@@ -41,10 +48,6 @@ body {
   padding-right: 25px;
 }
 
-.cabecera {
-  background-color: var(--color-cabecera);
-  height: var(--altura-cabecera-pie);
-}
 .sidebar {
   background-color: var(--color-barra-informativa);
   height: var(--altura-sidebar);
@@ -54,14 +57,42 @@ body {
   height: var(--altura-principal);
 }
 h1, h2, h3 {
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 0;
+  display: flex;
+}
+h1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 ul, li
 {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.navegacion{
+    display:flex;
+    padding-inline-end: 20px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+ .menu_navegacion{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+ }
+
+nav ul li {
+  margin-left: 1px;
+  padding-left: 180%;
+  align-items:center;
+  display:flex;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
 }
 
 .invisible {
@@ -86,7 +117,7 @@ ul, li
   margin-top: 7px;
 }
 .compras .lista ul:hover {
-  background-color: #c16b1e;
+  background-color: var(--color-hover);
 }
 .compras .precio_total {
   display: flex;
